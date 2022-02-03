@@ -9,16 +9,17 @@ import run_detection
 from pathlib import Path
 
 savedata        = False     # whether or not the gaze events and their measures are saved in .csv files
-showfig         = False      # whether or not the plot figures are shown after detection
+showfig         = True      # whether or not the plot figures are shown after detection
 savefig         = True     # whether or not the plot figures are saved after detection
 debugdetection  = False     # show runtime info about the detection in the console
 printresults    = True      # show results of the detection in the console
 
 # Import csv files --------------------------------------------------------------------------------------------------
 # datapath        = os.getcwd() + "/testdata/"    # put the full path to your data here
-datapath        = 'C:/Users/S-Vec/Dropbox/ReNa/Data/ReNaPilot-2021Fall/SingleTrials/'    # put the full path to your data here
+# datapath        = 'C:/Users/S-Vec/Dropbox/ReNa/Data/ReNaPilot-2021Fall/SingleTrials/'    # put the full path to your data here
+datapath        = 'C:/Users/S-Vec/Dropbox/ReNa/Data/ReNaPilot-2022Spring/Blocks-TS/'    # put the full path to your data here
 participants    = 1                             # number of participants
-trials          = 20                            # trials per participant
+trials          = 4                            # trials per participant
 filename        = 'varjo_gaze_output'           # looks for files with this string in the name
 
 for participant in range(1, participants + 1):

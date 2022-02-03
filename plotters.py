@@ -41,7 +41,7 @@ def detection(x, y, t, v, fixations, saccades, pursuits, blinks, trials, trial, 
 
 def calculation(fixations, saccades, pursuits, blinks, trial, participant):
     plt.figure(trial + 1, figsize=[25.60, 14.40])
-    plt.suptitle('Gaze event analysis for participant {}, trail {}'.format(participant, trial))
+    plt.suptitle('Gaze event analysis for participant {}, trial {}'.format(participant, trial))
     if fixations.any():
         plt.subplot(4, 4, 1)
         histogramreighley(fixations[:, 2])
